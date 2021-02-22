@@ -2,7 +2,7 @@ const router = require('express').Router();
 const unid = require('uniqid');
 const fs = require('fs');
 const path = require('path');
-const notes = require('../../db/db.json');
+let notes = require('../../db/db.json');
 
 router.get('/notes', (req, res) => {
     res.json(notes);
@@ -23,5 +23,20 @@ router.post('/notes', (req, res) => {
 
     res.json(notes);
 });
+
+router.delete('/notes/:id', (req, res) => {
+    let result = notes.filter(note => note.id !== req.params.id);
+
+    fs.writeFile("db/db.json", JSON.stringify(result), err => {
+        if (err) {
+            throw err;
+        } else {
+            return true;
+        }
+    });
+
+    notes = result;
+    res.json(notes);
+})
 
 module.exports = router;
