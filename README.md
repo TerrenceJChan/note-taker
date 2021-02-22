@@ -28,7 +28,7 @@ The app is also published live on [Heroku](https://young-fjord-40430.herokuapp.c
 Click on the "Get Started" button to start using the app. Write down notes, and then click on the save icon on the top right to commit the note to the server. The pencil icon creates a blank note to be filled out. Saved notes can be viewed by clicking on them on the left. The trash bin icon deletes saved notes.  
 
 ## Packages Used
-* [express](https://www.npmjs.com/package/path)  
+* [express](https://www.npmjs.com/package/express)  
 * [fs](https://www.npmjs.com/package/fs)  
 * [path](https://www.npmjs.com/package/path)  
 * [uniqid](https://www.npmjs.com/package/uniqid)  
