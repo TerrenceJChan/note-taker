@@ -3,6 +3,13 @@ Take quick notes on the go with Note Taker, a simple-to-use app to jot down and 
 
 ![Note Taker app preview](https://user-images.githubusercontent.com/11519585/108647263-2e877100-7486-11eb-9c72-4c3656efb007.gif)
 
+## Table of Contents
+* [Installation](#installation)
+* [Deployed Link](#deployed-link)
+* [Usage](#usage)
+* [Packages Used](#packages-used)
+* [Questions](#questions)
+
 ## Installation
 This is a Node.js app, so make sure you have Node installed on your computer! Clone the repository into a local directory with the code below:
 
